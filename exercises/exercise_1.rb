@@ -5,8 +5,13 @@ puts "----------"
 
 # Your code goes below here ...
 
-class Store < ActiveRecord::Base
-end
+# class Store < ActiveRecord::Base
+#   has_many :employees
+# end
+
+# class Store < ActiveRecord::Base
+#   belongs_to :store
+# end
 
 burnaby = Store.create do |s|
   s.name = "Burnaby"
