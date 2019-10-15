@@ -41,5 +41,5 @@ puts '-----output-----'
   puts
 end
 @womens_stores = Store.where(womens_apparel: true)
-@womens_stores = @womens_stores.where("annual_revenue > ?", 1000000 )
+@womens_stores = @womens_stores.where("annual_revenue < ?", 1000000 )
 puts @womens_stores.count
